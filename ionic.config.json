@@ -1,0 +1,7 @@
+{
+  "name": "Birdyeep",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

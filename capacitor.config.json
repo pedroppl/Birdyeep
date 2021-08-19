@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Birdyeep",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
