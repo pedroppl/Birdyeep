@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tags</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+      <ion-item *ngFor="let tags of arrayTags">
+        <ion-card >
+          <ion-item>
+            <ion-chip (click)="getPostsWithSelectedTag(tags.id)" >
+              <ion-label >#{{tags.name}} has been used {{tags.ntimes}} time/s</ion-label>
+            </ion-chip>
+          </ion-item>
+        </ion-card>
+      </ion-item>
+  </ion-list>
+
+</ion-content>

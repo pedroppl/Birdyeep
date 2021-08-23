@@ -20,15 +20,31 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'user-posts',
+        loadChildren: () => import('../user-posts/user-posts.module').then(m =>m.UserPostsPageModule)
+      },
+      {
+        path: 'user',
+        loadChildren: () => import('../user/user.module').then(m =>m.UserPageModule)
+      },
+      {
+        path: 'tags',
+        loadChildren: () => import('../tags/tags.module').then(m =>m.TagsPageModule)
+      },
+      {
+        path: 'Home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="navigateToLogin()">
+      <ion-icon name=""></ion-icon>Back
+    </ion-button>
+    <ion-title>Register</ion-title>
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating" >User Name</ion-label>
+    <ion-input placeholder="text" [(ngModel)]="user_name" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input placeholder="Email"  [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input placeholder="pwd"  [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="register()" color="secondary">Log In</ion-button>
+
+
+</ion-content>

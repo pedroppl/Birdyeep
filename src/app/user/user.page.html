@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating" > User Name</ion-label>
+    <ion-input placeholder="User Name" [(ngModel)]="user_name"></ion-input>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input placeholder="Tag"  [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+
+
+  <ion-button expand="block" (click)="editUser()" color="secondary">Create Post</ion-button>
+
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create or Edit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item>
+    <ion-label position="floating" >What are you thinking today... ?</ion-label>
+    <ion-textarea placeholder="Enter more information here..." [(ngModel)]="mText"></ion-textarea>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tag</ion-label>
+    <ion-input placeholder="Tag"  [(ngModel)]="tag_name" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item *ngIf="!isEditMode">
+    <ion-label position="fixed">Image</ion-label>
+    <ion-input type="file" (change)="changeListener($event)" accept="image/*" ></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="createOrEditPost()" color="secondary">Create Post</ion-button>
+
+
+
+
+</ion-content>
