@@ -18,7 +18,7 @@ function findMultiplus($mdata){
         return "empty";
     }
 
-    for ($i=0; $i < count($mdata); $i++) { 
+    for ($i=0; $i < count($mdata)+1; $i++) { 
 
         //$mdata[$i]['text'] .= " ". $i+1;
         
