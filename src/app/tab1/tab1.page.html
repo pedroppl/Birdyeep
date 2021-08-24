@@ -34,7 +34,7 @@
           </ion-item>
 
           <ion-item>
-            <ion-chip >
+            <ion-chip *ngIf="post.tag">
               <ion-label >#{{post.tag}}</ion-label>
 
             </ion-chip>
